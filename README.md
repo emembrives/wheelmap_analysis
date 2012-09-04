@@ -11,7 +11,7 @@ How to use
 
 > wget http://download.geofabrik.de/osm/europe/france.osm.bz2
 
-* Compile the GO program
+* Compile the GO first program
 
 > go build osm.go parser.go analysis.go
 
@@ -22,3 +22,10 @@ How to use
 * Use Gnuplot to draw nice pictures
 
 > gnuplot < plot.plt
+
+* Compile the second go program
+
+> go build counters.go parser.go
+
+* Run it and see statistics on standard output
+> ./counters|less
