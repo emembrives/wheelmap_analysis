@@ -28,4 +28,5 @@ How to use
 > go build counters.go parser.go
 
 * Run it and see statistics on standard output
-> ./counters|less
+> ./counters
+> less counters_all.txt counters_aggregates.txt
